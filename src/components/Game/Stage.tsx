@@ -1,6 +1,7 @@
 // src/components/Game/Stage.tsx
 import { useEffect, useRef } from 'react';
 import { GameInstance } from '../../game/main';
+import { GAME_WIDTH, GAME_HEIGHT } from '../../game/constants';
 
 export const Stage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -38,5 +39,5 @@ export const Stage = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ width: '800px', height: '600px', background: '#333' }} />;
+  return <div ref={containerRef} style={{ width: GAME_WIDTH + 'px', height: GAME_HEIGHT + 'px', background: '#333' }} />;
 };
