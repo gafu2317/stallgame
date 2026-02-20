@@ -13,9 +13,7 @@ export class PlayerEntity {
   }
 
   async load() {
-    const texture = await Assets.load('https://pixijs.com/assets/bunny.png');
-    this.sprite = new Sprite(texture);
-    this.sprite.anchor.set(0.5);
+
   }
 
   update(delta: number) {
